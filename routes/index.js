@@ -27,7 +27,8 @@ router.get('/', function(req, res, next) {
         gpa: '3.0',
         datesEnrolled: 'May 10th - June 22nd'
       }
-    ]
+    ],
+    navBarItems: ['About', 'Experience', 'Education', 'Skills', 'Interests', 'Awards' ]
   });
 });
 
