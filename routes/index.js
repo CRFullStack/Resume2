@@ -4,17 +4,17 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { 
-    firstName: 'Christopher',
-    lastName: 'Hobdy',
-    stAddress: '4140 Windsor Castle Way',
+    firstName: 'Gaara',
+    lastName: 'Shinobi',
+    stAddress: '41 adams way',
     city: 'Atlanta',
     state: 'GA',
-    zip: '30034',
-    phoneNumber: '(678)977-9570',
-    email: 'hobdy.chris02@gmail.com',
+    zip: '30000',
+    phoneNumber: '(678)666-6888',
+    email: 'g.shinobi@gmail.com',
     education: [
       {
-        schoolName: 'Huntingdon College',
+        schoolName: 'Huntingdon Unv.',
         degree: 'Bachelor',
         major: 'Compu Sci',
         gpa: '3.0',
