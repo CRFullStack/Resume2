@@ -91,10 +91,11 @@ block content
               <div class="my-auto">
                 <h2 class="mb-5">Awards &amp; Certifications</h2>
                 <ul class="fa-ul mb-0">
-                  <li>
-                    <i class="fa-li fa fa-trophy text-warning"></i>
-                    Google Analytics Certified Developer
-                  </li>
+                  for item in awards
+                    <li>
+                      <i class="fa-li fa fa-trophy text-warning"></i>
+                      p #{item}
+                    </li>
                 </ul>
               </div>
             </section>
@@ -106,8 +107,7 @@ block content
                 <h2 class="mb-5">Interest</h2>
                 <ul class="fa-ul mb-0">
                   <li>
-                    <i class="fa-li fa fa-trophy text-warning"></i>
-                    Im a cool guy
+                    p #{interests.summary}
                   </li>
                 </ul>
               </div>
