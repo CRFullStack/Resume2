@@ -7,14 +7,14 @@ router.get('/', function(req, res, next) {
     // add nav bar items to the navBarItems arr
     navBarItems: ['About', 'Experience', 'Education', 'Awards', 'Interests', 'Skills' ],
     about: { // the about section 
-      firstName: 'Christopher',
-      lastName: 'Hobdy',
-      stAddress: '4140 Windsor Castle Way',
+      firstName: 'Gaara',
+      lastName: 'Shinobi',
+      stAddress: '400 adams way',
       city: 'Atlanta',
       state: 'GA',
-      zip: '30034',
-      phoneNumber: '(678)977-9570',
-      email: 'hobdy.chris02@gmail.com',
+      zip: '300000',
+      phoneNumber: '(678)477-6888',
+      email: 'g.shinobi02@gmail.com',
       summary: 'Chris I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.',
       socialMedia:[
           {
@@ -29,7 +29,7 @@ router.get('/', function(req, res, next) {
     },
     education: [ //the education section. Add as many dictionaries as needed to the education obj
       {
-        schoolName: 'Huntingdon College',
+        schoolName: 'Huntingdon Unv.',
         degree: 'Bachelor',
         major: 'Compu Sci',
         gpa: '3.0',
