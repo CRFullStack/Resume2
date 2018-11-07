@@ -3,9 +3,13 @@ extends layout
 block content
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Super User</span>
+        <span class="d-block d-lg-none">My Resume</span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/startbootstrap-resume-gh-pages/img/profile.jpg" alt="">
+          <div>
+            <h2 class="mb-0 title">My Resume!</h2>
+          </div>
+          
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="#{about.image}" alt="">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,8 +27,9 @@ block content
 
     <div class="container-fluid p-0">
 
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+      <section class="resume-section content p-3 p-lg-5 d-flex d-column bg-image" id="about">
         <div class="my-auto">
+          
           <h1 class="mb-0"> #{about.firstName} 
             <span class="text-primary"> #{about.lastName} </span>
           </h1>
@@ -44,7 +49,7 @@ block content
 
       <hr class="m-0">
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column bg-image2" id="experience">
         <div class="my-auto">
           <h2 class="mb-5">Experience</h2>
           //- this loops through all items in the experience dictionary
@@ -65,7 +70,7 @@ block content
 
       <hr class="m-0">
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column bg-image3" id="education">
         <div class="my-auto">
           <h2 class="mb-5">Education</h2>
           //- loop through all items in education dictionary
@@ -87,7 +92,7 @@ block content
       
       <hr class="m-0">
 
-            <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+            <section class="resume-section p-3 p-lg-5 d-flex flex-column bg-image4" id="awards">
               <div class="my-auto">
                 <h2 class="mb-5">Awards &amp; Certifications</h2>
                 <ul class="fa-ul mb-0">
@@ -102,7 +107,7 @@ block content
 
       <hr class="m-0">
       //- Needs an interest section added
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column bg-image5" id="interests">
               <div class="my-auto">
                 <h2 class="mb-5">Interest</h2>
                 <ul class="fa-ul mb-0">
@@ -113,48 +118,16 @@ block content
               </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column bg-image6" id="skills">
               <div class="my-auto">
                 <h2 class="mb-5">Skills</h2>
 
                 <div class="subheading mb-3">Programming Languages &amp; Tools</div>
                 <ul class="list-inline dev-icons">
-                  <li class="list-inline-item">
-                    <i class="fab fa-html5"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-css3-alt"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-js-square"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-angular"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-react"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-node-js"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-sass"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-less"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-wordpress"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-gulp"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-grunt"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fab fa-npm"></i>
-                  </li>
+                  for skill in skillIcons
+                    <li class="list-inline-item">
+                      <i class="fab #{skill.icon}" title="#{skill.title}"></i>
+                    </li>
                 </ul>
                 </div>
                 </section>
