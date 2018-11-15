@@ -2,27 +2,25 @@ extends layout
 
 block content
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">My Resume</span>
-        <span class="d-none d-lg-block">
-          <div>
-            <h2 class="mb-0 title">My Resume!</h2>
-          </div>
-          
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="#{about.image}" alt="">
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          for item in navBarItems
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="##{item.toLowerCase()}"> #{item}</a>
-            </li>
-        </ul>
-      </div>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">My Resume</span>
+            <span class="d-none d-lg-block">
+                <div>Fullstack Engineer</div>
+                <div><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="#{persona.about.image}" alt=""></div>
+                
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              for item in persona.navBarItems
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="##{item.toLowerCase()}"> #{item}</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="container-fluid p-0">
@@ -30,16 +28,16 @@ block content
       <section class="resume-section content p-3 p-lg-5 d-flex d-column bg-image" id="about">
         <div class="my-auto">
           
-          <h1 class="mb-0"> #{about.firstName} 
-            <span class="text-primary"> #{about.lastName} </span>
+          <h1 class="mb-0"> #{persona.about.firstName} 
+            <span class="text-primary"> #{persona.about.lastName} </span>
           </h1>
-          <div class="subheading mb-5"> #{about.stAddress} · #{about.city}, #{about.state} #{about.zip} · #{about.phoneNumber} ·
-            <a href="mailto:#{about.email}">#{about.email}</a>
+          <div class="subheading mb-5"> #{persona.about.stAddress} · #{persona.about.city}, #{persona.about.state} #{persona.about.zip} · #{persona.about.phoneNumber} ·
+            <a href="mailto:#{persona.about.email}">#{persona.about.email}</a>
           </div>
-          <p class="lead mb-5"> #{about.summary} </p>
+          <p class="lead mb-5"> #{persona.about.summary} </p>
           <div class="social-icons">
             //-this loops through all items in the about dictionary
-            for item in about.socialMedia 
+            for item in persona.about.socialMedia 
               <a href="#{item.url}">
                 <i class="fab #{item.icon}"></i>
               </a>
@@ -53,7 +51,7 @@ block content
         <div class="my-auto">
           <h2 class="mb-5">Experience</h2>
           //- this loops through all items in the experience dictionary
-          for item in experience 
+          for item in persona.experience 
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
               <div class="resume-content mr-auto">
                 <h3 class="mb-0">#{item.title}</h3><!---->
@@ -74,7 +72,7 @@ block content
         <div class="my-auto">
           <h2 class="mb-5">Education</h2>
           //- loop through all items in education dictionary
-          for item in education 
+          for item in persona.education 
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
               <div class="resume-content mr-auto">
                 <h3 class="mb-0"> #{item.schoolName} </h3>
@@ -96,7 +94,7 @@ block content
               <div class="my-auto">
                 <h2 class="mb-5">Awards &amp; Certifications</h2>
                 <ul class="fa-ul mb-0">
-                  for item in awards
+                  for item in persona.awards
                     <li>
                       <i class="fa-li fa fa-trophy text-warning"></i>
                       p #{item}
@@ -112,7 +110,7 @@ block content
                 <h2 class="mb-5">Interest</h2>
                 <ul class="fa-ul mb-0">
                   <li>
-                    p #{interests.summary}
+                    p #{persona.interests.summary}
                   </li>
                 </ul>
               </div>
@@ -124,7 +122,7 @@ block content
 
                 <div class="subheading mb-3">Programming Languages &amp; Tools</div>
                 <ul class="list-inline dev-icons">
-                  for skill in skillIcons
+                  for skill in persona.skillIcons
                     <li class="list-inline-item">
                       <i class="fab #{skill.icon}" title="#{skill.title}"></i>
                     </li>
