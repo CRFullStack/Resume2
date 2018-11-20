@@ -49,12 +49,12 @@ block content
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column bg-image2" id="experience">
         <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
+          <h2 class="mb-5">Experience  <span class="dev-icons"><i class="fas fa-briefcase"></i></span></h2>
           //- this loops through all items in the experience dictionary
           for item in persona.experience 
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
               <div class="resume-content mr-auto">
-                <h3 class="mb-0">#{item.title}</h3><!---->
+                <h3 class="mb-0"><i class="fas fa-chevron-circle-right pointer"></i> #{item.title}</h3><!---->
                 <div class="subheading mb-3">#{item.company}</div> <!--, the next line will be -->
                 <p>#{item.summary}</p>
               </div>
@@ -70,12 +70,12 @@ block content
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column bg-image3" id="education">
         <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
+          <h2 class="mb-5">Education  <span class="dev-icons"><i class="fas fa-graduation-cap"></i></span></h2>
           //- loop through all items in education dictionary
           for item in persona.education 
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
               <div class="resume-content mr-auto">
-                <h3 class="mb-0"> #{item.schoolName} </h3>
+                <h3 class="mb-0"> <i class="fas fa-chevron-circle-right pointer"></i> #{item.schoolName} </h3>
                 <div class="subheading mb-3">#{item.degree}</div>
                 <div>#{item.major}</div>
                 <p>#{item.gpa}</p>
@@ -92,12 +92,12 @@ block content
 
             <section class="resume-section p-3 p-lg-5 d-flex flex-column bg-image4" id="awards">
               <div class="my-auto">
-                <h2 class="mb-5">Awards &amp; Certifications</h2>
+                <h2 class="mb-5">Awards &amp; Certifications <span class="dev-icons"><i class="fas fa-trophy"></i></span></h2>
+                <i class="fa-li fa fa-trophy"></i>
                 <ul class="fa-ul mb-0">
                   for item in persona.awards
                     <li>
-                      <i class="fa-li fa fa-trophy text-warning"></i>
-                      p #{item}
+                      p <i class="fas fa-chevron-circle-right pointer"></i> #{item}
                     </li>
                 </ul>
               </div>
@@ -107,7 +107,7 @@ block content
       //- Needs an interest section added
       <section class="resume-section p-3 p-lg-5 d-flex flex-column bg-image5" id="interests">
               <div class="my-auto">
-                <h2 class="mb-5">Interest</h2>
+                <h2 class="mb-5">Interest <span class="dev-icons"><i class="fas fa-futbol"></i></span></h2> 
                 <ul class="fa-ul mb-0">
                   <li>
                     p #{persona.interests.summary}
@@ -118,13 +118,19 @@ block content
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column bg-image6" id="skills">
               <div class="my-auto">
-                <h2 class="mb-5">Skills</h2>
+                <h2 class="mb-5">Skills <span class="dev-icons"><i class="fas fa-code"></i></span></h2>
 
                 <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-                <ul class="list-inline dev-icons">
+                <ul class="list-inline-item dev-icons">
                   for skill in persona.skillIcons
                     <li class="list-inline-item">
                       <i class="fab #{skill.icon}" title="#{skill.title}"></i>
+                    </li>
+                </ul>
+                <ul class="fa-ul mb-0">
+                  for item in persona.skillList
+                    <li>
+                      p <i class="fas fa-chevron-circle-right pointer"></i> #{item}
                     </li>
                 </ul>
                 </div>
