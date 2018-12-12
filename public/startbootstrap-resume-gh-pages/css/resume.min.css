@@ -243,7 +243,12 @@ section.resume-section .resume-item .resume-date {
 }
 
 .text-primary {
-    color: rgba(255, 69, 0)!important
+    color: rgba(255, 69, 0)!important;
+    font-size: 1.25rem;
+}
+
+.text-primary2 {
+    color: rgba(255, 69, 0)!important;
 }
 
 a {
@@ -256,5 +261,15 @@ a:hover {
     color: rgba(255, 69, 0)
 }
 
+/* Zonical */
+[class*="zocial-"]:before {
+    font-family: 'zocial', sans-serif;
+  }
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+  }
+  
 
 

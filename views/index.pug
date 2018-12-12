@@ -3,9 +3,9 @@ extends layout
 block content
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">My Resume</span>
+            <span class="d-block d-lg-none">FullStack Software Engineer</span>
             <span class="d-none d-lg-block">
-                <div>Fullstack Engineer</div>
+                <div>Software Engineer</div>
                 <div><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="#{persona.about.image}" alt=""></div>
                 
             </span>
@@ -29,9 +29,9 @@ block content
         <div class="my-auto">
           
           <h1 class="mb-0"> #{persona.about.firstName} 
-            <span class="text-primary"> #{persona.about.lastName} </span>
+            <span class="text-primary2"> #{persona.about.lastName} </span>
           </h1>
-          <div class="subheading mb-5"> #{persona.about.stAddress} · #{persona.about.city}, #{persona.about.state} #{persona.about.zip} · #{persona.about.phoneNumber} ·
+          <div class="subheading mb-5"> #{persona.about.city}, #{persona.about.state} #{persona.about.zip} · #{persona.about.phoneNumber} ·
             <a href="mailto:#{persona.about.email}">#{persona.about.email}</a>
           </div>
           <p class="lead mb-5"> #{persona.about.summary} </p>
@@ -39,7 +39,10 @@ block content
             //-this loops through all items in the about dictionary
             for item in persona.about.socialMedia 
               <a href="#{item.url}">
-                <i class="fab #{item.icon}"></i>
+                if item.alt == true
+                  <span class="#{item.icon}" title="#{item.title}"></span>
+                else
+                  <i class="fab #{item.icon}" title="#{item.title}"></i>
               </a>
           </div>
         </div>
@@ -129,8 +132,8 @@ block content
                 </ul>
                 <ul class="fa-ul mb-0">
                   for item in persona.skillList
-                    <li>
-                      p <i class="fas fa-chevron-circle-right pointer"></i> #{item}
+                    <li class="list-inline-item">
+                      p #{item} -  
                     </li>
                 </ul>
                 </div>
