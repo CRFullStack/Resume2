@@ -34,7 +34,7 @@ block content
           <div class="subheading mb-5"> #{persona.about.city}, #{persona.about.state} #{persona.about.zip} · #{persona.about.phoneNumber} ·
             <a href="mailto:#{persona.about.email}">#{persona.about.email}</a>
           </div>
-          <p class="lead mb-5"> #{persona.about.summary} </p>
+          <p class=" mb-5"> #{persona.about.summary} </p>
           <div class="social-icons">
             //-this loops through all items in the about dictionary
             for item in persona.about.socialMedia 
@@ -59,7 +59,7 @@ block content
               <div class="resume-content mr-auto">
                 <h3 class="mb-0"><i class="fas fa-chevron-circle-right pointer"></i> #{item.title}</h3><!---->
                 <div class="subheading mb-3">#{item.company}</div> <!--, the next line will be -->
-                <p>#{item.summary}</p>
+                <p>#{item.summary}<a href="#{item.links}">#{item.links_title}</a></p>
               </div>
               <div class="resume-date text-md-right"><!--experience.date-->
                 <span class="text-primary">#{item.date}</span>
@@ -95,7 +95,7 @@ block content
 
             <section class="resume-section p-3 p-lg-5 d-flex flex-column bg-image4" id="awards">
               <div class="my-auto">
-                <h2 class="mb-5">Awards &amp; Certifications <span class="dev-icons"><i class="fas fa-trophy"></i></span></h2>
+                <h2 class="mb-5">Awards, Accomplishments, &amp; Certifications <span class="dev-icons"><i class="fas fa-trophy"></i></span></h2>
                 <i class="fa-li fa fa-trophy"></i>
                 <ul class="fa-ul mb-0">
                   for item in persona.awards

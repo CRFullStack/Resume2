@@ -17,7 +17,7 @@
        "zip": "30030",
        "phoneNumber": "(678) 977-9570",
        "email": "chris.hobdy02@gmail.com",
-       "summary": "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.",
+       "summary": "I work in an agile software development environment, collaborating with other departments to ensure a top quality product that meets clients' needs. I have excellent technical and analytical abilities and my coding strengths as a programmer means I am able to debug and correct needed code sections. I have strong verbal and written communication skills and write solid technical manuals for developed applications. I am highly detail-oriented and can visualize how code will translate into the finished application. My ability to prioritize and effectively manage my time allows me to juggle several projects simultaneously.",
        "socialMedia": [
           {
             "_comment": "Icons can be found at http://fizzed.com/oss/font-mfizz, http://weloveiconfonts.com/ & https://fontawesome.com/icons?d=gallery",
@@ -34,7 +34,7 @@
           },
           {
              "icon": "zocial-youtube",
-             "url": "https://www.youtube.com",
+             "url": "https://www.youtube.com/channel/UCbZbZkK_NRUhJRAModDWlzA",
              "title": "YouTube",
              "alt": true
           },
@@ -72,25 +72,33 @@
     ],
     "experience": [
        {
-          "title": "IT Consultant",
+        "title": "Freelance Web Developer",
+        "company": "Atlanta Classical Academy",
+        "summary": "[+] Using Greater Giving's CMS, I designed Atlanta Classical Academy's silent aution web site. I used HTML and CSS to design the UI and UX of the site, I also added payment processing components which processes payments using TLS encryption and makes it easy for guest to purchase tickets and register their credit cards for the auction.", 
+        "date": "11/2018 - 02/2019",
+        "links": "https://atlantaclassical.ejoinme.org/achome",
+        "links_title": " View the silent auction website here."
+       },
+       {
+          "title": "Help Desk Analyst I",
           "company": "Thompson Technologies",
           "summary": "[+] Apply corrective action processes to accurately resolve customer order issue [+] Work across multiple applications to perform error resolution [+] Fulfill service orders that meet original time frame commitments made to customers [+] Isolate and resolve problems by correlating information from networking equipment [+] Create tickets and maintained necessary documentation to track the ticket through resolution [+] Receive and handle calls directly from team members and operators [+] Submit requests to order hardware [+] Flag and create Knowledge base documents [+] Follow the Standard Operating Procedures as instructed [+] Provide remote desktop PC and telephone support to internal customers with a focus on superior customer service [+] Support client POS Hardware including registers, bump bars, kiwis, KPS’s, receipt printers, and connectivity hardware [+] Work closely with NCR hardware and software [+] Communicate with team members and Operators daily, who all have different levels of technical knowledge. I must quickly assess how technically savvy the individual I’m dealing with is and adjust accordingly. [+] Created a Python script that uses an api found on GitHub to automate uploading content to Google Docs spreadsheet. [+] Created a Python script that opens all the applications I use daily with one click. [+] Created a JavaScript web application to help streamline the SOP process. I also created a C# program to go along with the app. The program lets you easily update the JavaScript app without touching the source code. [+] Created a Python script that uses an Outlook api to help mass delete messages from the folder of your choice.",
           "date": "11/2017 - current"
        },
        {
-          "title": "Information Technology Consultant",
+          "title": "Freelance Web Developer",
           "company": "EFI Global",
           "summary": "[+] Created a custom pdf form with Adobe that could be used in conjunction with an app called Fast Field Forms. The app would automatically populate the pdf after the user uploaded the data to Fast Field Forms but only if the pdf was formatted correctly.",
           "date": "09/2016 - 12/2016"
        },
        {
-          "title": "Internship",
+          "title": "Paid Internship",
           "company": "Elite Home Products, Inc",
           "summary": "[+] Troubleshoot network connectivity and hardware problems for users or user groups\n[+] Run updates/backups after company hours when needed\n[+] Train users in procedures related to windows applications software or related systems\n[+] Configure security settings or access permissions for groups or individuals \n[+] Identify the causes of networking problems, using diagnostic testing software and equipment.\n[+] Configure security settings or access permissions for groups or individuals\n[+] Configure wide area network (WAN) or local area network (LAN) routers or related equipment \n[+] Provide telephone support related to networking or connectivity issues \n[+] Analyze network data to determine network usage, disk space availability, or server function \n[+] Perform routine maintenance or standard repairs to networking components or equipment \n[+] Install new hardware (servers, printers, computer work stations, etc.)\n[+] Install antivirus protection \n[+] Monitor industry websites or publications for information about patches, releases, viruses, or potential problem identification \n[+] Create or update technical documentation for network installations or changes to existing installations.\n[+] Maintain logs of network activity  ",
           "date": "05/2016 - 08/2016"
        },
        {
-          "title": "Internship",
+          "title": "Paid Internship",
           "company": "Elite Home Products, Inc",
           "summary": "[+]  Used SQL to create new  queries that helped the database admin search through millions of records. [+]  Communicated new ideas and sql queries with the admin via Microsoft Outlook. [+] Swapped old HDD drives for new SSD  drives. [+] Installed new computers with hardware/software and mapped network drives (windows 7). [+] Troubleshoot connectivity problems for individual users. [+] Troubleshoot network and hardware problems with printers. [+] Run updates after company hours when needed. [+] Gathered and restored passwords for users. [+] Data entry.",
           "date": "05/2015 - 08/2015"
@@ -99,12 +107,15 @@
     "awards": [
        "Certified: Bomgar Representative Essentials v16, Dec 2017 - Present",
        "Certified: KCS V5 Foundation, Dec 2017 - Present, License 3_1657883_1025",
-       "Received multiple Pefect Survey awards for providing quality customer service.",
-       "Created a web app which helped my teammates more accurately follow SOP flowcharts.",
-       "Used SQL to create new queries that helped the database admin search through millions of records."
+       "Received multiple Pefect Survey awards for providing quality customer service while working for Thompson Technologies.",
+       "Started a team effort to switch to a more agile process by creating a web app which helped my teammates more accurately follow SOP flowcharts.",
+       "Used SQL to create new queries that helped the database admin search through millions of records.",
+       "Using Python, created a script which opens all the programs and websites that I use on a daily basis. This dramatically cuts down the time it takes to begin my workday.",
+       "Using Python, created a script which uses an Outlook api to help mass delete no longer needed messages from the folder of your choice.",
+       "Created this website using Node.js"
     ],
     "interests": {
-       "summary": "I'm a networking engineer with a passion for technology. I monitor networks and help improve efficiency and security. I'm a natural problem solver and I love to take on difficult challenges. I'm also a firm believer that no obstacle is too big for the mind to overcome. But really? My life is all about code. Most nights I fall asleep working on a program, and the next morning I'm back at it. The anticipation of seeing if your script will run correctly after all the work you've put in, that's the feeling that made me fall in love with coding. I have a very diverse background. I can subnet your network and turn around and automate daily task with Python. I can add HTML & CSS to your website, and add vlans to your switches. I can troubleshoot OSPF while socket programming with JAVA. I can.... well you get the idea."
+       "summary": "I'm a networking engineer with a passion for technology. I monitor networks and help improve efficiency and security. I'm a natural problem solver and I love to take on difficult challenges. I'm also a firm believer that no obstacle is too big for the mind to overcome. But really? My life is all about code. Most nights I fall asleep working on a program, and the next morning I'm back at it. The anticipation of seeing if your script will run correctly after all the work you've put in, that's the feeling that made me fall in love with coding. I have a very diverse background. I can subnet your network and turn around and automate daily task with Python. I can add HTML & CSS to your website, and add vlans to your switches. I can troubleshoot OSPF while socket programming with JAVA. I can.... well you get the idea, I'm a nerd. Outside of coding, I enjoy playing basketball & soccer. I also enjoy spending time with my family and attending church."
     },
     "skillIcons": [ 
        {
