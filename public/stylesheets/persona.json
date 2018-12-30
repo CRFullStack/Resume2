@@ -33,13 +33,13 @@
              "alt": false
           },
           {
-             "icon": "zocial-youtube",
+             "icon": "fa-youtube",
              "url": "https://www.youtube.com/channel/UCbZbZkK_NRUhJRAModDWlzA",
              "title": "YouTube",
              "alt": true
           },
           {
-             "icon": "fontawesome-github-alt",
+             "icon": "fa-github-alt",
              "url": "https://gist.github.com/CRFullStack",
              "title": "Github Gist",
              "alt": false
