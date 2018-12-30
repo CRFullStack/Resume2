@@ -74,7 +74,7 @@
        {
         "title": "Freelance Web Developer",
         "company": "Atlanta Classical Academy",
-        "summary": "[+] Using Greater Giving's CMS, I designed Atlanta Classical Academy's silent aution web site. I used HTML and CSS to design the UI and UX of the site, I also added payment processing components which processes payments using TLS encryption and makes it easy for guest to purchase tickets and register their credit cards for the auction.", 
+        "summary": "[+] Using Greater Giving's CMS, I designed Atlanta Classical Academy's silent auction web site. I used HTML and CSS to design the UI and UX of the site, I also added payment processing components which processes payments using TLS encryption and makes it easy for guest to purchase tickets and register their credit cards for the auction.", 
         "date": "11/2018 - 02/2019",
         "links": "https://atlantaclassical.ejoinme.org/achome",
         "links_title": " View the silent auction website here."
@@ -217,5 +217,5 @@
       }
       
     ],
-    "skillList":["Python", "Java", "Javascript", "C#", "JQuery", "Java for Android", "HTML5", "CSS3", "MySQL", "Oracle-SQL", "MongoDB", "No SQL", "AWS DynamoDB w/BOTO3", "Bash scripting for Debian", "XML","Linux Ubuntu & Debian Server/CLI", "Cisco", "Git", "GitHub", ".NET", "Visual Studio 2017 & VS Code", "Xamarin", "Android Studio", "Kali Linux", "Amazon toolset", "SOAP & Rest", "API", "Oauth2", "Flask", "Django", "Node.js", "ExpressJS", "MVC", "SharePoint", "Service Now", "Virtual Box", "VmWare", "Microsoft O365 Suite", "SonicWall", "Wireshark", "Nmap", "Symantic", "Norton", "Bomgar", "Avast", "VLAN", "OSPF", "EIGRP", "MPLS", "IPv4", "LAN", "WAN"]
+    "skillList":["Python", "Java", "Javascript", "C#", "JQuery", "Java for Android", "Heroku", "HTML5", "CSS3", "MySQL", "Oracle-SQL", "MongoDB", "No SQL", "AWS DynamoDB w/BOTO3", "Bash scripting for Debian", "XML","Linux Ubuntu & Debian Server/CLI", "Cisco", "Git", "GitHub", ".NET", "Visual Studio 2017 & VS Code", "Xamarin", "Android Studio", "Kali Linux", "Amazon toolset", "SOAP & Rest", "API", "Oauth2", "Flask", "Django", "Node.js", "ExpressJS", "MVC", "SharePoint", "Service Now", "Virtual Box", "VmWare", "Microsoft O365 Suite", "SonicWall", "Wireshark", "Nmap", "Symantic", "Norton", "Bomgar", "Avast", "VLAN", "OSPF", "EIGRP", "MPLS", "IPv4", "LAN", "WAN"]
  }
