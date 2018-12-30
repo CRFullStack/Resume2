@@ -36,7 +36,7 @@
              "icon": "fa-youtube",
              "url": "https://www.youtube.com/channel/UCbZbZkK_NRUhJRAModDWlzA",
              "title": "YouTube",
-             "alt": true
+             "alt": false
           },
           {
              "icon": "fa-github-alt",
